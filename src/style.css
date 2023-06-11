@@ -82,7 +82,7 @@
   }
   .iconbasket {
     background: url(img/basket_dark.svg)
-      center / cover;
+      center / contain;
   }
 
   .burgersvg {
