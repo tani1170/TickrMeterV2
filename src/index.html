@@ -45,6 +45,7 @@
             <a href="index.html">
               <div
                 class="img-toggle h-16 w-28"
+                aria-label="vend tilbage til forside"
               ></div>
             </a>
           </div>
@@ -53,6 +54,7 @@
           <button
             id="togglenav"
             class="z-30 mr-5 md:hidden"
+            aria-label="Burgermenu"
           >
             <svg
               class="burgersvg h-7 w-7"
@@ -113,66 +115,77 @@
                     >Guide</a
                   >
                 </li>
-                <div class="dropdown">
-                  <button
-                    class="navfont flex items-center"
-                    href="omos.html"
-                  >
-                    Om Os
-                    <svg
-                      class="ml-1 h-5 w-5"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-
-                  <!-- DROPDOWN MENU -->
-                  <div
-                    class="dropdown-content"
-                  >
-                    <a
-                      class="navfont"
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="navfont flex items-center"
                       href="omos.html"
-                      >Hvem er vi?</a
                     >
-                    <a
-                      class="navfont"
-                      href="#"
-                      >Nyheder</a
+                      Om Os
+                      <svg
+                        class="ml-1 h-5 w-5"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <!-- DROPDOWN MENU -->
+                    <div
+                      class="dropdown-content"
                     >
-                    <a
-                      class="navfont"
-                      href="#"
-                      >Til
-                      virksomheder</a
-                    >
+                      <a
+                        class="navfont"
+                        href="omos.html"
+                        >Hvem er vi?</a
+                      >
+                      <a
+                        class="navfont"
+                        href="#"
+                        >Nyheder</a
+                      >
+                      <a
+                        class="navfont"
+                        href="#"
+                        >Til
+                        virksomheder</a
+                      >
+                    </div>
                   </div>
-                </div>
+                </li>
               </ul>
               <!-- NAVIGATIONS ICONS -->
               <ul
                 class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
               >
-                <button
-                  id="toggle-theme"
-                  class="icontheme h-6 w-6"
-                ></button>
-                <a
-                  href="login.html"
-                  class="iconuser h-6 w-6"
-                ></a>
-                <a
-                  href="#"
-                  class="iconbasket h-6 w-6"
-                ></a>
+                <li>
+                  <button
+                    id="toggle-theme"
+                    class="icontheme h-6 w-6"
+                    aria-label="Skift baggrundstema"
+                  ></button>
+                </li>
+                <li>
+                  <a
+                    href="login.html"
+                    class="iconuser h-6 w-6"
+                    aria-label="Login her"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="iconbasket h-6 w-6"
+                    aria-label="Se kurv"
+                  ></a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -198,7 +211,7 @@
       >
         <img
           class="h-auto w-full"
-          src="/img/tickrmeter front.png"
+          src="/img/tickrmeter front.webp"
           alt="billede af tickrmeter produkt med grønt lys"
         />
       </div>
