@@ -46,7 +46,10 @@
           class="flex w-screen justify-between py-4"
         >
           <div class="ml-5 md:ml-10">
-            <a href="index.html">
+            <a
+              href="index.html"
+              title="vend tilbage til forside"
+            >
               <div
                 class="img-toggle h-16 w-28"
               ></div
@@ -57,6 +60,7 @@
           <button
             id="toggle"
             class="mr-5 md:hidden"
+            aria-label="Burgermenu"
           >
             <svg
               class="burgersvg h-7 w-7"
@@ -167,15 +171,28 @@
               <ul
                 class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
               >
-                <li
-                  class="iconsetting h-6 w-6"
-                ></li>
-                <li
-                  class="iconuser h-6 w-6"
-                ></li>
-                <li
-                  class="iconbasket h-6 w-6"
-                ></li>
+                <li>
+                  <button
+                    id="toggle-theme"
+                    class="icontheme h-6 w-6"
+                    aria-label="Skift baggrundstema"
+                  ></button>
+                </li>
+
+                <li>
+                  <button
+                    href="login.html"
+                    class="iconuser h-6 w-6"
+                    aria-label="Login her"
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    href="#"
+                    class="iconbasket h-6 w-6"
+                    aria-label="Se kurv"
+                  ></button>
+                </li>
               </ul>
             </div>
           </nav>
