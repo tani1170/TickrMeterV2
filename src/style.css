@@ -123,7 +123,7 @@
       center / cover;
   }
   .bannerlogo3 {
-    background: url(/img/techtimes_dark.svg)
+    background: url(/img/techtimes.svg)
       center / cover;
   }
 
@@ -281,7 +281,7 @@
   }
   .iconuser {
     background: url(/img/user_light.svg)
-      center / cover;
+      center / contain;
   }
 
   .iconusergreen {
@@ -290,7 +290,7 @@
   }
   .iconbasket {
     background: url(/img/basket_light.svg)
-      center / cover;
+      center / contain;
   }
 
   .iconbasketgreen {
@@ -369,7 +369,7 @@
       center / cover;
   }
   .bannerlogo3 {
-    background: url(/img/techtimes_dark.svg)
+    background: url(/img/techtimes.svg)
       center / cover;
   }
 
@@ -1019,14 +1019,7 @@ a {
     center / cover;
 }
 .bannerlogo3 {
-  background: var(
-      --light,
-      url(img/techtimes_light.svg)
-    )
-    var(
-      --dark,
-      url(/img/techtimes_dark.svg)
-    )
+  background: url(/img/techtimes.svg)
     center / cover;
 }
 
@@ -1043,11 +1036,7 @@ a {
 }
 
 .newslettercheck {
-  background: var(
-      --light,
-      url(/mg/check_dark.svg)
-    )
-    var(--dark, url(/img/check.svg))
+  background: url(/img/check_dark.svg)
     center / contain;
   background-repeat: no-repeat;
 }

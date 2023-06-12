@@ -44,7 +44,10 @@
           class="mx-auto flex items-center justify-between py-4"
         >
           <div class="ml-5 md:ml-10">
-            <a href="index.html">
+            <a
+              href="index.html"
+              title="vend tilbage til forside"
+            >
               <div
                 class="logopri h-16 w-28"
               ></div
@@ -55,6 +58,7 @@
           <button
             id="togglenav"
             class="z-30 mr-5 md:hidden"
+            aria-label="Burgermenu"
           >
             <svg
               class="burgersvg h-7 w-7"
@@ -163,20 +167,29 @@
               </ul>
               <!-- NAVIGATIONS ICONS -->
               <ul
-                class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+                class="ml-3 flex place-content-end items-end gap-5 md:col-start-7 lg:col-start-9"
               >
-                <button
-                  id="toggle-theme"
-                  class="iconthemegreen h-6 w-6"
-                ></button>
-                <a
-                  class="iconusergreen h-6 w-6"
-                  href="login.html"
-                ></a>
+                <li>
+                  <button
+                    id="toggle-theme"
+                    class="iconthemegreen h-6 w-6"
+                    aria-label="Skift baggrundstema"
+                  ></button>
+                </li>
+                <li>
+                  <a
+                    class="iconusergreen block h-6 w-6"
+                    href="login.html"
+                    aria-label="Login her"
+                  ></a>
+                </li>
 
-                <li
-                  class="iconbasketgreen h-6 w-6"
-                ></li>
+                <li>
+                  <a
+                    class="iconbasketgreen block h-6 w-6"
+                    aria-label="Se kurv"
+                  ></a>
+                </li>
               </ul>
             </div>
           </nav>
